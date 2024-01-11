@@ -1,6 +1,6 @@
 
 # MyFavouriteTunes - A Music Catalogue
-MyFavouriteTunes is a dynamic music catalog application developed using Python, Django, Bootstrap, and more. This project showcases a robust framework and incorporates user-centric features for an enhanced music exploration experience.
+MyFavouriteTunes is a dynamic music catalog application developed using Python, Django, Bootstrap, Javascript. This project showcases a robust framework and incorporates user-centric features for an enhanced music exploration experience.
 
 ## Key Features
 
