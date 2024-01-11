@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page}}</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% load static %}
+    <script src="{% static 'script.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+
+
+</head>
+<body>
+<!--Navbar added to base html-->
+<nav class="navbar navbar-light" style="background-color: #fddbfd54;">
+    <a href="{% url 'list_of_songs' %}" class="navbar-brand">
+        <div style="padding-left:10px" class="d-flex align-items-center">
+            <img src="{% static 'logo.png' %}" width="50" height="50" class="d-inline-block align-top" alt="Logo">
+            <span>
+                <b style="font-size: 25px;">TuneTracker</b>
+            </span>
+        </div>
+    </a>
+</nav>
+
+
+    {% block start %}
+
+    {% endblock %}
+
+
+
+</body>
+</html>

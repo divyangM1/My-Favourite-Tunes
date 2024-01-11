@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block start %}
+
+<!-- Container to display Artist and Title of corresponding song -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header" style="background-color: #ff0e4f12;">
+                    Song Details
+                </div>
+                <div class="card-body" >
+                    <h4 class="card-title"> Song: {{ song.title }}</h4>
+                    <p class="card-text" style="font-size: 18px;"> Artist: {{ song.artist }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

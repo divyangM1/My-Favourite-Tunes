@@ -1,0 +1,31 @@
+{% extends "base.html"%}
+{% block start%}
+
+<!-- To display message alert sent from backend -->
+{% if message %}
+<div class="alert alert-primary" role="alert">
+    {{ message }}
+</div>
+{% endif %}
+
+<!-- Form to Add songs, takes Title and Artist as inputs -->
+<form class="col-6 mx-auto card p-3 shadow-lg mt-4" method = "post">
+
+    {% csrf_token %}
+      <h3>Add Songs</h3>
+      <hr>
+      <div class="mb-3">
+        <label class="form-label">Song Title</label>
+        <input name = "title" required type="text" class="form-control" >
+      </div>
+      
+      <div class="mb-3">
+        <label class="form-label">Artist Name</label>
+        <input name = "artist" required type="text" class = "form-control">
+      </div>
+
+      <button type="submit" style="background-color: #ff0f50; color: white" class="btn btn-light">Add Song</button>
+    </form>
+
+
+{% endblock %}
